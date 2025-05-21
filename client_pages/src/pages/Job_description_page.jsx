@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/header";
+
 const JobDescriptionPage = () => {
   const navigate = useNavigate();
   const [jobDescription, setJobDescription] = useState("");
@@ -22,6 +23,7 @@ const JobDescriptionPage = () => {
       mainPhoto,
       otherFiles,
     });
+    navigate("/job_completed");
   };
 
   const handleMainPhotoChange = (e) => {
@@ -66,7 +68,6 @@ const JobDescriptionPage = () => {
                     file:text-sm file:font-semibold
                     file:bg-green-500 file:text-white
                     hover:file:bg-green-600"
-                
                 />
               </div>
               <div>
@@ -101,7 +102,7 @@ const JobDescriptionPage = () => {
             <div>
               <label className="block font-semibold mb-2">Time:</label>
               <input
-                type="datetime-local"
+                type="date"
                 value={time}
                 onChange={(e) => setTime(e.target.value)}
                 className="w-full border border-gray-300 rounded  text-black border p-2"
@@ -119,7 +120,6 @@ const JobDescriptionPage = () => {
             </div>
           </div>
           <button
-            onClick={() => navigate("/offers")}
             type="submit"
             className="mt-8 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 font-semibold"
           >

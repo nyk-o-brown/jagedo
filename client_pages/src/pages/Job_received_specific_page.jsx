@@ -21,7 +21,7 @@ const ClientJobSpecificPage = () => {
   return (
     <div className="min-h-screen bg-gray-500 w-screen">
       <Header />
-      <h1>Client Job Specific Details</h1>
+      <h1>Bid Details</h1>
       <div className="border border-gray-300 p-8 mt-4 rounded-lg bg-white text-black">
         <h2>{offerDetail.name}</h2>
         <p>Rating: {offerDetail.rating}</p>
@@ -36,7 +36,7 @@ const ClientJobSpecificPage = () => {
           </span>
         </p>
         <div style={{ marginTop: "1rem" }}>
-          <button style={{ marginRight: "1rem" ,background:"white",}}>Accept Bid</button>
+          <button onClick={() => alert("You have accepted this bid")} style={{ marginRight: "1rem" ,background:"white",}}>Accept Bid</button>
           <button  onClick={() => navigate("/offers")} style={{background:"white",border:"black"}}>Decline Bid</button>
         </div>
       </div>
