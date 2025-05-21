@@ -1,36 +1,25 @@
 // OffersReceivedPage.js
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "../components/header"; // Adjust the import path as necessary
+import Header from "../components/header";
+import { offers } from "../data/offers";
 
 const OffersReceivedPage = () => {
   const navigate = useNavigate();
 
-  // Dummy data for demonstration. In a real app, you’d fetch this from an API.
-  const offers = [
-    { id: 1, name: "Worker One", rating: 4.5, status: "interested" },
-    { id: 2, name: "Worker Two", rating: 4.0, status: "accepted" },
-    { id: 3, name: "Worker Three", rating: 3.8, status: "interested" },
-  ];
-
   const handleOfferClick = (offerId) => {
-    // Navigate to the client job specific page.
     navigate(`/client-job/${offerId}`);
   };
 
   return (
-    <div>
-        <Header /> {/* Add the header here */}
-      <h1>Offers Received</h1>
+    <div className="min-h-screen bg-gray-500 w-screen">
+      <Header />
+      <h1 className="">Offers Received</h1>
       <ul style={{ listStyleType: "none", padding: 0 }}>
         {offers.map((offer) => (
           <li
             key={offer.id}
-            style={{
-              marginBottom: "1rem",
-              border: "1px solid #ddd",
-              padding: "1rem",
-            }}
+            className="mb-4 border border-gray-300 p-4 rounded-lg bg-333"
           >
             <h3>{offer.name}</h3>
             <p>Rating: {offer.rating}</p>

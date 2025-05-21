@@ -12,6 +12,7 @@ function App() {
         <Route path="/" element={<JobDescriptionPage />} />
         <Route path="/offers" element={<OffersReceivedPage />} />
         <Route path="/client-job/:id" element={<ClientJobSpecificPage />} />
+        <Route path="/client_job" element={<ClientJobSpecificPage />} />
       </Routes>
     </Router>
   );

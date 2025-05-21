@@ -1,39 +1,29 @@
 // ClientJobSpecificPage.js
 import React from "react";
-import { useParams } from "react-router-dom";
-import Header from "../components/header"; // Adjust the import path as necessary
+import { useParams, useNavigate } from "react-router-dom";
+import Header from "../components/header";
+import { offers } from "../data/offers";
 
 const ClientJobSpecificPage = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
+  const offerDetail = offers.find((offer) => offer.id === id);
 
-  // Dummy data for demonstration. In practice, fetch job/offer details based on the offer id.
-  const offerDetail = {
-    id,
-    workerName: "Worker One",
-    rating: 4.5,
-    certifications: ["Certification A", "Certification B"],
-    jobsCompleted: 25,
-    message: "I have extensive experience with similar jobs and will deliver quality work.",
-    jobDescription: "Fix the electrical issues at the site and complete the repair tasks.",
-    status: "interested",
-  };
-
-  const handleAccept = () => {
-    // Process the action to accept the bid.
-    alert("Bid accepted!");
-  };
-
-  const handleDecline = () => {
-    // Process the action to decline the bid.
-    alert("Bid declined!");
-  };
+  if (!offerDetail) {
+    return (
+      <div className="min-h-screen bg-gray-500 w-screen">
+        <Header />
+        <h1>Offer Not Found</h1>
+      </div>
+    );
+  }
 
   return (
-    <div>
-        <Header /> {/* Add the header here */}
+    <div className="min-h-screen bg-gray-500 w-screen">
+      <Header />
       <h1>Client Job Specific Details</h1>
-      <div style={{ border: "1px solid #ddd", padding: "1rem" }}>
-        <h2>{offerDetail.workerName}</h2>
+      <div className="border border-gray-300 p-8 mt-4 rounded-lg bg-white text-black">
+        <h2>{offerDetail.name}</h2>
         <p>Rating: {offerDetail.rating}</p>
         <p>Certifications: {offerDetail.certifications.join(", ")}</p>
         <p>Jobs Completed: {offerDetail.jobsCompleted}</p>
@@ -46,10 +36,8 @@ const ClientJobSpecificPage = () => {
           </span>
         </p>
         <div style={{ marginTop: "1rem" }}>
-          <button onClick={handleAccept} style={{ marginRight: "1rem" }}>
-            Accept Bid
-          </button>
-          <button onClick={handleDecline}>Decline Bid</button>
+          <button style={{ marginRight: "1rem" ,background:"white",}}>Accept Bid</button>
+          <button  onClick={() => navigate("/offers")} style={{background:"white",border:"black"}}>Decline Bid</button>
         </div>
       </div>
     </div>
