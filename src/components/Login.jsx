@@ -8,7 +8,7 @@ const Login = () => {
 
   const handleLogin = () => {
     login(); // fake login state
-    navigate("/dashboard/medical"); // redirect after login
+    navigate("/dashboard/Jobs"); // redirect after login
   };
 
   return (

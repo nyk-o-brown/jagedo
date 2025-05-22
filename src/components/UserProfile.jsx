@@ -2,9 +2,13 @@ const UserProfile = () => {
   const user = {
     name: "Derick Sheldrick",
     role: "Construction Worker",
-    skills: "Plumbing, wall repair, water tank cleaning",
+    skills: "Plumbing, Electrical",
     avatar: "https://robohash.org/derrick.png?set=set5", // Dicebear or RoboHash avatar
   };
+
+  const userSkills = user.skills
+      .split(",")
+      .map(skill => skill.trim().toLowerCase());
 
   return (
     <div className="p-10">
