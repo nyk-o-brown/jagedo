@@ -30,6 +30,12 @@ function Header() {
         >
           Fundi Jobs
         </Link>
+        <Link
+          to="/fundi-profile"
+          className="bg-white text-blue-600 px-3 py-1 rounded mx-1"
+        >
+          Fundi Profile
+        </Link>
       </nav>
     </header>
   );
