@@ -1,0 +1,177 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "profilePicture": "https://via.placeholder.com/150",
+    "rating": 4.5,
+    "description": "Experienced construction worker with over 10 years in commercial and residential projects.",
+    "totalJobs": 50,
+    "certificates": ["OSHA Certified", "Heavy Machinery License"],
+    "portfolio": [
+      {
+        "id": 1,
+        "image": "https://via.placeholder.com/300x200",
+        "jobDescription": "Constructed a modern office complex",
+        "clientContact": "client1@example.com"
+      },
+      {
+        "id": 2,
+        "image": "https://via.placeholder.com/300x200",
+        "jobDescription": "Renovated a historic building",
+        "clientContact": "client2@example.com"
+      },
+      {
+        "id": 3,
+        "image": "https://via.placeholder.com/300x200",
+        "jobDescription": "Managed a bridge construction project",
+        "clientContact": "client3@example.com"
+      },
+      {
+        "id": 4,
+        "image": "https://via.placeholder.com/300x200",
+        "jobDescription": "Oversaw a high-rise apartment development",
+        "clientContact": "client4@example.com"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Carlos Ramirez",
+    "profilePicture": "https://via.placeholder.com/150",
+    "rating": 4.7,
+    "description": "Skilled worker specializing in large-scale commercial projects.",
+    "totalJobs": 68,
+    "certificates": ["Welding Certification", "Scaffolding Safety"],
+    "portfolio": [
+      {
+        "id": 1,
+        "image": "https://via.placeholder.com/300x200",
+        "jobDescription": "Designed a new factory layout",
+        "clientContact": "client5@example.com"
+      },
+      {
+        "id": 2,
+        "image": "https://via.placeholder.com/300x200",
+        "jobDescription": "Led a mall renovation",
+        "clientContact": "client6@example.com"
+      },
+      {
+        "id": 3,
+        "image": "https://via.placeholder.com/300x200",
+        "jobDescription": "Built a sports arena",
+        "clientContact": "client7@example.com"
+      },
+      {
+        "id": 4,
+        "image": "https://via.placeholder.com/300x200",
+        "jobDescription": "Remodeled an industrial plant",
+        "clientContact": "client8@example.com"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Amina Yusuf",
+    "profilePicture": "https://via.placeholder.com/150",
+    "rating": 4.2,
+    "description": "Detail-oriented construction professional with a focus on safety and quality.",
+    "totalJobs": 45,
+    "certificates": ["Safety Management", "Electrical Installation"],
+    "portfolio": [
+      {
+        "id": 1,
+        "image": "https://via.placeholder.com/300x200",
+        "jobDescription": "Led electrical installations in a skyscraper",
+        "clientContact": "client9@example.com"
+      },
+      {
+        "id": 2,
+        "image": "https://via.placeholder.com/300x200",
+        "jobDescription": "Managed a residential complex upgrade",
+        "clientContact": "client10@example.com"
+      },
+      {
+        "id": 3,
+        "image": "https://via.placeholder.com/300x200",
+        "jobDescription": "Oversaw the expansion of a commercial plaza",
+        "clientContact": "client11@example.com"
+      },
+      {
+        "id": 4,
+        "image": "https://via.placeholder.com/300x200",
+        "jobDescription": "Coordinated a bridge reinforcement project",
+        "clientContact": "client12@example.com"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Mohammed Ali",
+    "profilePicture": "https://via.placeholder.com/150",
+    "rating": 4.6,
+    "description": "Versatile construction worker with a passion for innovative building techniques.",
+    "totalJobs": 55,
+    "certificates": ["Green Building Certification", "Crane Operation"],
+    "portfolio": [
+      {
+        "id": 1,
+        "image": "https://via.placeholder.com/300x200",
+        "jobDescription": "Constructed an eco-friendly office park",
+        "clientContact": "client13@example.com"
+      },
+      {
+        "id": 2,
+        "image": "https://via.placeholder.com/300x200",
+        "jobDescription": "Directed the building of a sustainable housing project",
+        "clientContact": "client14@example.com"
+      },
+      {
+        "id": 3,
+        "image": "https://via.placeholder.com/300x200",
+        "jobDescription": "Managed a concrete bridge project",
+        "clientContact": "client15@example.com"
+      },
+      {
+        "id": 4,
+        "image": "https://via.placeholder.com/300x200",
+        "jobDescription": "Led a commercial renovation",
+        "clientContact": "client16@example.com"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Linda Njeri",
+    "profilePicture": "https://via.placeholder.com/150",
+    "rating": 4.8,
+    "description": "Dedicated professional with expertise in project management and quality assurance.",
+    "totalJobs": 72,
+    "certificates": ["Project Management", "Quality Assurance"],
+    "portfolio": [
+      {
+        "id": 1,
+        "image": "https://via.placeholder.com/300x200",
+        "jobDescription": "Oversaw the construction of a community center",
+        "clientContact": "client17@example.com"
+      },
+      {
+        "id": 2,
+        "image": "https://via.placeholder.com/300x200",
+        "jobDescription": "Managed a public infrastructure project",
+        "clientContact": "client18@example.com"
+      },
+      {
+        "id": 3,
+        "image": "https://via.placeholder.com/300x200",
+        "jobDescription": "Directed the renovation of a historical site",
+        "clientContact": "client19@example.com"
+      },
+      {
+        "id": 4,
+        "image": "https://via.placeholder.com/300x200",
+        "jobDescription": "Coordinated a multi-phase road repair project",
+        "clientContact": "client20@example.com"
+      }
+    ]
+  }
+]
